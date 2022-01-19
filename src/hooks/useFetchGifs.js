@@ -12,11 +12,13 @@ export const useFetchGifs = (category) => {
 
     //Los hooks ppueden tener un estado y podrian indicar a otro componentes que lo utilizan cuando
     //deben de renderizarse porque algo cambio
+    //useState estado del componente
    const [state, setState] = useState({
        data: [],
        loading: true
    });
 
+   //useEffect, efecto que tiene el componente
    useEffect( () => {
         getGifs(category)
             .then(imgs => {

@@ -4,12 +4,13 @@ import React, { useState } from 'react'
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
  
-export const GifExpertApp = () => {
+/*export*/ const GifExpertApp = ( { defaultCategories  = [] }) => {
 
     //const categories = ['One Punch', 'Samurai X', 'Dragon Ball'];
     //const [categories, setcategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
 
-    const [categories, setcategories] = useState(['One Punch']);
+    //const [categories, setcategories] = useState(['One Punch']);
+    const [categories, setcategories] = useState(defaultCategories);
 
     /*const handleAdd = () => {
         //Operador xprect se utiliza para agregar elementos a un arreglo, manteniendo el arreglo
@@ -48,4 +49,4 @@ export const GifExpertApp = () => {
 }
 
   
-  //export default GifExpertApp
+  export default GifExpertApp

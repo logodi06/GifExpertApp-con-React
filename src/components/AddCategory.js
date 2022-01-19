@@ -11,12 +11,14 @@ export const AddCategory = ({setcategories}) => {
     const handleInputChange = (e) => {
         //console.log(e.target.value);
         setinputValue(e.target.value);
+        console.log('HAndleInputChange llamado');
         
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        //Handle resolver
+        console.log('HandleSubmit',inputValue);
         //validar que el campo del input no mande un vacio o una palabra menor a 2 letras
         if(inputValue.trim().length>2){
             //Se utiliza el setCategories que se recibe del padre
@@ -33,7 +35,7 @@ export const AddCategory = ({setcategories}) => {
 
     return (
         <form onSubmit={handleSubmit}>
-       
+            <p>{inputValue}</p>
             {/* <h1>{inputValue}</h1> */}
            <input 
                 type="text"

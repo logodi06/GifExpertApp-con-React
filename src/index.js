@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 //se debe colocar el nombre de la importación sobre "{}" ejem:  {GifExpertApp}
 //Pero si se exporta con el defaul "export default GifExpertApp" no se deben colocar "{}"
 //Solo el nombre  GifExpertApp
-import {GifExpertApp} from './GifExpertApp';
+import GifExpertApp from './GifExpertApp';
 import './index.css';
 
 ReactDOM.render(
